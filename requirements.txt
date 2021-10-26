@@ -10,3 +10,4 @@ greenlet~=1.1.1
 setuptools~=56.0.0
 WTForms~=2.3.3
 Flask~=1.1.2
+gunicorn==20.1.0
