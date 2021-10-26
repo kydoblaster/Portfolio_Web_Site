@@ -1,0 +1,58 @@
+{% include "header.html" %}
+        <header>
+            <h1 class="site-heading text-center d-none d-lg-block">
+                <span class="site-heading-upper smb-3 impact">Get in Touch with</span>
+                <span class="site-heading-lower text-primary">Kyle Ashur Yonan</span>
+            </h1>
+        </header>
+            <div class="container intro">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded text-center rounded">
+
+
+                            <div class="row">
+
+                              <div class="col-lg-8 col-md-10 mx-auto">
+                                <h2 class="section-heading mb-5">
+                                    <span class="section-heading-lower impact topper">{{TOPPER}}</span>
+                                </h2>
+                                <p>I look forward to hearing from you! Fill out the form below and I'll get back to you soon.</p>
+                                <!-- here we add our contact forms -->
+                                {% block content %}
+                                <div class="contact">
+                                    <form action="{{ url_for('contact') }}" method=post>
+                                        <div>
+                                            <!-- name forms -->
+                                            <p>
+                                                {{ form.name.label }} <br>
+                                                {{ form.name(placeholder='Your name') }}
+                                            </p>
+                                            <!-- email forms -->
+                                            <p>
+                                                {{ form.email.label }} <br>
+                                                {{ form.email(placeholder='Your e-mail ...') }}
+                                            </p>
+                                            <!-- Content of your request -->
+                                            <p>
+                                                {{ form.message.label }}<br>
+                                                {{ form.message(placeholder='Your message to me ...') }}
+                                            </p>
+                                            <!-- Submit button -->
+
+                                            <p>
+                                                {{ form.submit}}
+                                            </p>
+                                        </div>
+                                    </form>
+                                </div>
+                                {% endblock %}
+                              </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+{% include "footer.html" %}

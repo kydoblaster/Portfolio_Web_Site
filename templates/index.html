@@ -1,0 +1,36 @@
+{% include "header.html" %}
+
+        <header>
+            <h1 class="site-heading text-center d-none d-lg-block">
+                <span class="site-heading-upper smb-3 impact">An exposé of the digital works of</span>
+                <span class="site-heading-lower text-primary">Kyle Ashur Yonan</span>
+            </h1>
+        </header>
+
+        <section class="page-section clearfix">
+            <div class="container">
+                <div class="intro">
+                    <img class="img-fluid intro-img  mb-3 mb-lg-0 " src="static/assets/img/selfy.jpg" alt="..." />
+                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                        <h2 class="section-heading mb-4">
+                            <span class="section-heading-upper impact"></span>
+                            <span class="section-heading-lower impact">Developer</span>
+                        </h2>
+                        <p class="mb-3">I am a full-stack developer based in Python. I treat all things like a puzzle
+                        and love finding solutions to digital and real-world problems. I have worked as a brewmaster
+                        for over a decade, am an Army veteran, an artist, and an avid outdoorsman. Scroll down and
+                        check out some of my digital projects :)</p>
+                        <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="{{url_for('contact')}}">Contact Me</a></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div id="portfolio"></div>
+        <section class="page-section2 cta">
+            <div class="container" >
+                    {% include "carousel.html" %}
+            </div>
+        </section>
+
+{% include "footer.html" %}
