@@ -11009,7 +11009,7 @@ p {
   .intro .intro-text {
     width: 60%;
     margin-top: 0.5rem;
-    margin-left: 2.75rem;
+    margin-left: 1.75rem;
     position: relative;
   }
 
@@ -11024,8 +11024,16 @@ p {
     margin-bottom: 5rem;
   }
 
-  contactonator {
-    margin-top: 15rem;
+  .contactonator {
+    margin-top: 17rem;
+    max-width: 100%;
+    text-align: center;
+    left: -1.5rem;
+  }
+
+  .slimmer {
+    width: 50%
+    text-align: center;
   }
 
 }
@@ -11226,6 +11234,96 @@ html {
 }
 
 
+/* contact form stuff */
+
+.contact {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.contact form {
+    margin-top: 0px;
+    padding: 0px 30px;
+}
+.contact h3 {
+    color: #488ace;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.contact p {
+    margin: 0 0px 10px;
+    margin-left: 0px!important;
+}
+.contact label {
+    display: none;
+}
+.contact input {
+   width: 65%;
+    border: none;
+    border: 1px solid #dddddd78;
+    padding: 10px;
+    border-radius: 4px;
+}
+.contact textarea#message {
+    width: 65%;
+    height: 122px;
+    border: 1px solid #dddddd78;
+    border-radius: 4px;
+    padding: 10px;
+}
+.contact input#submit {
+  display: inline-bloc;
+  width: 10.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 1.5rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #363632;
+  background-color: rgba(242, 174, 48, 0.85);
+  border-color: rgba(242, 174, 48, 0.5);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.contact input#submit:hover {
+  color: #3d3d38;
+  background-color: #eab46f;
+  border-color: #e9b067;
+}
+
+.topper {
+    margin-top: 1rem;
+    padding-top: 2rem;
+}
+
+.blahblah {
+    margin-top: 0rem;
+}
+
+.arrow__btn {
+        display: none;
+
+ }
 
 /* */here is the card css:/* */
 * {
@@ -11424,94 +11522,3 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(89, 58, 39, 0.5);
 }
-
-/* contact form stuff */
-
-.contact {
-    margin: 1rem;
-    padding: 1rem;
-}
-
-.contact form {
-    margin-top: 0px;
-    padding: 0px 30px;
-}
-.contact h3 {
-    color: #488ace;
-    text-align: center;
-    font-weight: 600;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-.contact p {
-    margin: 0 0px 10px;
-    margin-left: 0px!important;
-}
-.contact label {
-    display: none;
-}
-.contact input {
-   width: 65%;
-    border: none;
-    border: 1px solid #dddddd78;
-    padding: 10px;
-    border-radius: 4px;
-}
-.contact textarea#message {
-    width: 65%;
-    height: 122px;
-    border: 1px solid #dddddd78;
-    border-radius: 4px;
-    padding: 10px;
-}
-.contact input#submit {
-  display: inline-bloc;
-  width: 6.5rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background-color: transparent;
-  border: 1px solid transparent;
-  padding: 1.5rem 0.75rem;
-  font-size: 1rem;
-  border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  color: #363632;
-  background-color: rgba(242, 174, 48, 0.85);
-  border-color: rgba(242, 174, 48, 0.5);
-  font-weight: 600;
-  font-size: 1rem;
-  margin-top: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.contact input#submit:hover {
-  color: #3d3d38;
-  background-color: #eab46f;
-  border-color: #e9b067;
-}
-
-.topper {
-    margin-top: 1rem;
-    padding-top: 2rem;
-}
-
-.blahblah {
-    margin-top: 0rem;
-}
-
-.arrow__btn {
-        display: none;
-
- }
