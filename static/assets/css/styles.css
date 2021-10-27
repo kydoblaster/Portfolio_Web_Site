@@ -11451,14 +11451,14 @@ html {
     display: none;
 }
 .contact input {
-   width: 100%;
+   width: 65%;
     border: none;
     border: 1px solid #dddddd78;
     padding: 10px;
     border-radius: 4px;
 }
 .contact textarea#message {
-    width: 100%;
+    width: 65%;
     height: 122px;
     border: 1px solid #dddddd78;
     border-radius: 4px;
@@ -11466,7 +11466,7 @@ html {
 }
 .contact input#submit {
   display: inline-bloc;
-  width: 10rem;
+  width: 6.5rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
