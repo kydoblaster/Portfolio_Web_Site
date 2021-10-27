@@ -1,11 +1,12 @@
 from flask import Flask, render_template, request
 from forms import ContactForm
 import smtplib
+import os
 
-my_email = "kydoblaster@gmail.com"
-my_password = "kydoblaster327!!!"
+my_email = os.environ.get("MY_EMAIL")
+my_password = os.environ.get("MY_PASS")
 app = Flask(__name__)
-app.secret_key = 'secretKey'
+app.secret_key = os.environ.get("APP_KEY")
 
 
 
@@ -25,7 +26,7 @@ def contact():
             connection.login(user=my_email, password=my_password)
             connection.sendmail(
                 from_addr=my_email,
-                to_addrs="kyle.yonan@gmail.com",
+                to_addrs=os.environ.get("TO_EMAIL"),
                 msg=f"Subject: New Form Submission\n\n{name}\n{email}\n{message}\n"
             )
             connection.close()
