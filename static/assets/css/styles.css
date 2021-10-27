@@ -11009,7 +11009,7 @@ p {
   .intro .intro-text {
     width: 60%;
     margin-top: 0.5rem;
-    margin-left: 3.75rem;
+    margin-left: 2.75rem;
     position: relative;
   }
 
@@ -11022,6 +11022,10 @@ p {
 
   .page-section2{
     margin-bottom: 5rem;
+  }
+
+  contactonator {
+    margin-top: 15rem;
   }
 
 }
